@@ -8,8 +8,6 @@ type id = int ;;
   
 let db : (id * (string * int)) list ref = ref [] ;;
                                               
-(* See .mli file for documentation on individual functions *)
-
 let create (id : id) (name : string) : unit =
   db := (id,  (name, 0)) :: !db ;;
    
